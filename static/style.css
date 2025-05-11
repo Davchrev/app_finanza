@@ -1,0 +1,68 @@
+/* Reset y box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+  background-image: url('finanss.jpg'); /* Asegúrate de que 'fondo.jpg' esté en la misma carpeta que este archivo CSS */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo de los inputs y el botón */
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Estilo específico para el botón */
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

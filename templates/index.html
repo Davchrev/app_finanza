@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Gastos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <h1>GESTIÓN DE GASTOS</h1>
+      <form action="/add_expense" method="POST">
+        <input type="text" name="category" placeholder="Categoría" required>
+        <input type="number" name="amount" placeholder="Gasto" required>
+        <input type="date" name="date" placeholder="Fecha" required>
+        <input type="text" name="name" placeholder="Motivo" required>
+        <button type="submit">Registrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
